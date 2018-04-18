@@ -19,6 +19,33 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
 	 crossorigin="anonymous"></script>
 	<script src="vendor/modernizr.js"></script>
+	<style>
+		.hide-bullets {
+			list-style: none !important;
+			margin-left: -40px;
+			margin-top: 20px;
+		}
+		.thumbnail {
+			padding: 0;
+		}
+
+		.carousel-inner>.item>img,
+		.carousel-inner>.item>a>img {
+			width: 100%;
+		}
+
+		.col-sm-3 a {
+			border: 1px solid transparent;
+			border-radius: 0;
+			transition: all 3s ease;
+		}
+
+		.col-sm-3 a:hover {
+			border: 1px solid #ff4647;
+			border-radius: 100% 60% / 30% 10%;
+			background: linear-gradient(rgba(56, 123, 131, 0.7), rgba(56, 123, 131, 0.7));
+		}
+	</style>
 
 </head>
 
@@ -81,316 +108,346 @@
 		<div class="content-wrapper">
 
 			<!-- Page Section (About) -->
-			<section class="page-section page-section__dark" id="section-gallery">
+			<section class="page-section page-section__dark">
 				<div class="container">
-					<div class="section-title-wrapper">
-						<div class="section-title-inner">
-							<h1 class="section-title">Our Gallery</h1>
-							<span class="section-desc">Example of work process</span>
+					<div class="text-center">
+						<div>
+							<h1 class="section-title">CTRL-Z</h1>
+							<span class="section-desc">CTRL Z, desafía alumnos a proponer ideas innovadoras a diversas problemáticas que afectan la vida
+									cotidiana de los ciudadanos. En este caso se trata de proponer soluciones a las problemáticas que
+									hoy emergen en relación a la movilidad y el medio ambiente en las ciudades, y que responden a
+									los desafíos específicos propuestos en cada caso.</span>
 						</div>
 					</div>
+					<div class="container">
+						<div id="main_area">
+							<!-- Slider -->
+							<div class="row">
+								<div class="col-sm-6" id="slider-thumbs">
+									<!-- Bottom switcher of slider -->
+									<ol class="hide-bullets ">
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-16">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories16.jpg">
+											</a>
+										</li>
 
-					<div class="filter-btn-group">
-						<!-- Filter Trigger -->
-						<div class="filter-trigger-holder">
-							<button class="btn btn-link filter-trigger" id="galleryFilterTrigger">
-								<i class="fa fa-toggle-off"></i>
-								<span>Filter Menu</span>
-							</button>
-						</div>
-						<!-- Filter Trigger / End -->
-						<!-- Filter Clone Button -->
-						<div class="filter-clone-btn">
-							<a href="#" class="btn btn-default btn-has-icon" data-filter="*">
-								<i class="fa fa-th"></i> All Images</a>
-						</div>
-						<!-- Filter Clone Button / End -->
-					</div>
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-1">
+												<img src="images/control-z/cataTuRuta_chica.jpg">
+											</a>
+										</li>
 
-					<div class="gallery-wrapper" id="galleryWrapper">
-						<aside class="gallery-sidebar" id="gallerySidebar">
-							<div class="gallery-filter-wrapper" id="galleryFilterWrapper">
-								<!-- Tags Filter -->
-								<ul class="gallery-filter filter-group list-unstyled" data-filter-group="tags">
-									<li>
-										<a href="#" class="btn btn-primary btn-has-icon" data-filter="*">
-											<i class="fa fa-th"></i> All Images</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default btn-has-icon" data-filter=".workplace">
-											<i class="fa fa-desktop"></i> Work Place</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default btn-has-icon" data-filter=".office">
-											<i class="fa fa-suitcase"></i> Office</a>
-									</li>
-									<li>
-										<a href="#" class="btn btn-default btn-has-icon" data-filter=".workflow">
-											<i class="fa fa-folder-o"></i> Workflow</a>
-									</li>
-								</ul>
-								<!-- Tags Filter / End -->
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-2">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories02.jpg">
+											</a>
+										</li>
 
-								<hr class="hr__dashed">
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-3">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories03.jpg">
+											</a>
+										</li>
 
-								<h5>Note for usage:</h5>
-								<p>Use the buttons with category name to preview images in this category.</p>
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-4">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories04.jpg">
+											</a>
+										</li>
+
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-5">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories05.jpg">
+											</a>
+										</li>
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-6">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories06.jpg">
+											</a>
+										</li>
+
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-7">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories07.jpg">
+											</a>
+										</li>
+
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-8">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories08.jpg">
+											</a>
+										</li>
+
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-9">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories09.jpg">
+											</a>
+										</li>
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-10">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories10.jpg">
+											</a>
+										</li>
+
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-11">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories11.jpg">
+											</a>
+										</li>
+
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-12">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories12.jpg">
+											</a>
+										</li>
+
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-13">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories13.jpg">
+											</a>
+										</li>
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-14">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories14.jpg">
+											</a>
+										</li>
+
+										<li class="col-sm-3">
+											<a class="thumbnail" id="carousel-selector-15">
+												<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/Thumb/falko_gallery_accessories15.jpg">
+											</a>
+										</li>
+									</ol>
+								</div>
+								<div class="col-sm-6">
+									<div class="col-xs-12" id="slider">
+										<!-- Top part of the slider -->
+										<div class="row">
+											<div class="col-sm-12" id="carousel-bounding-box">
+												<div class="carousel slide" id="myCarousel">
+													<!-- Carousel items -->
+													<div class="carousel-inner">
+														<div class="active item" data-slide-number="16">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories16.jpg">
+														</div>
+
+														<div class="item" data-slide-number="1">
+															<img src="images/control-z/cataTuRuta_grande.jpg">
+														</div>
+
+														<div class="item" data-slide-number="2">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories02.jpg">
+														</div>
+
+														<div class="item" data-slide-number="3">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories03.jpg">
+														</div>
+
+														<div class="item" data-slide-number="4">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories04.jpg">
+														</div>
+
+														<div class="item" data-slide-number="5">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories05.jpg">
+														</div>
+
+														<div class="item" data-slide-number="6">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories06.jpg">
+														</div>
+
+														<div class="item" data-slide-number="7">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories07.jpg">
+														</div>
+
+														<div class="item" data-slide-number="8">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories08.jpg">
+														</div>
+
+														<div class="item" data-slide-number="9">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories09.jpg">
+														</div>
+
+														<div class="item" data-slide-number="10">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories10.jpg">
+														</div>
+
+														<div class="item" data-slide-number="11">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories11.jpg">
+														</div>
+
+														<div class="item" data-slide-number="12">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories12.jpg">
+														</div>
+
+														<div class="item" data-slide-number="13">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories13.jpg">
+														</div>
+
+														<div class="item" data-slide-number="14">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories14.jpg">
+														</div>
+
+														<div class="item" data-slide-number="15">
+															<img src="https://bufiles.blob.core.windows.net/co3628/gallery/accessories/falko_gallery_accessories15.jpg">
+														</div>
+													</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--/Slider-->
 							</div>
-						</aside>
-						<div class="gallery-content" id="galleryContent">
-							<!-- Gallery Feed -->
-							<div class="gallery-feed js_gallery-feed">
-								<div class="gallery-item col-xs-4 col-md-4 workplace">
-									<div class="gallery-item-holder">
-										<figure class="gallery-img">
-											<a href="#">
-												<img src="images/samples/gallery-img1.jpg" alt="">
-											</a>
-										</figure>
-										<div class="gallery-details">
-											<h5 class="gallery-title">Galllery Image title</h5>
-											<a href="images/samples/gallery-l-img2.jpg" class="btn btn-primary btn-single-icon btn-gallery-plus magnific-popup__custom-title"
-											 data-desc="
-												Gallery Image Title <a href='gallery-single-item.html' class='btn btn-primary btn-has-icon icon-right'><i class='fa fa-link'></i> View more</a>
-											">
-												<i class="fa fa-plus"></i>
-											</a>
-											<a href="gallery-single-item.html" class="btn btn-primary btn-single-icon btn-gallery-link">
-												<i class="fa fa-link"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="gallery-item col-xs-4 col-md-4 office workplace">
-									<div class="gallery-item-holder">
-										<figure class="gallery-img">
-											<a href="#">
-												<img src="images/samples/gallery-img2.jpg" alt="">
-											</a>
-										</figure>
-										<div class="gallery-details">
-											<h5 class="gallery-title">Galllery Image title</h5>
-											<a href="images/samples/gallery-l-img2.jpg" class="btn btn-primary btn-single-icon btn-gallery-plus magnific-popup__custom-title"
-											 data-desc="
-												Gallery Image Title <a href='gallery-single-item.html' class='btn btn-primary btn-has-icon icon-right'><i class='fa fa-link'></i> View more</a>
-											">
-												<i class="fa fa-plus"></i>
-											</a>
-											<a href="gallery-single-item.html" class="btn btn-primary btn-single-icon btn-gallery-link">
-												<i class="fa fa-link"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="gallery-item col-xs-4 col-md-4 workflow">
-									<div class="gallery-item-holder">
-										<figure class="gallery-img">
-											<a href="#">
-												<img src="images/samples/gallery-img3.jpg" alt="">
-											</a>
-										</figure>
-										<div class="gallery-details">
-											<h5 class="gallery-title">Galllery Image title</h5>
-											<a href="images/samples/gallery-l-img2.jpg" class="btn btn-primary btn-single-icon btn-gallery-plus magnific-popup__custom-title"
-											 data-desc="
-												Gallery Image Title <a href='gallery-single-item.html' class='btn btn-primary btn-has-icon icon-right'><i class='fa fa-link'></i> View more</a>
-											">
-												<i class="fa fa-plus"></i>
-											</a>
-											<a href="gallery-single-item.html" class="btn btn-primary btn-single-icon btn-gallery-link">
-												<i class="fa fa-link"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="gallery-item col-xs-4 col-md-4 office workflow">
-									<div class="gallery-item-holder">
-										<figure class="gallery-img">
-											<a href="#">
-												<img src="images/samples/gallery-img4.jpg" alt="">
-											</a>
-										</figure>
-										<div class="gallery-details">
-											<h5 class="gallery-title">Galllery Image title</h5>
-											<a href="images/samples/gallery-l-img2.jpg" class="btn btn-primary btn-single-icon btn-gallery-plus magnific-popup__custom-title"
-											 data-desc="
-												Gallery Image Title <a href='gallery-single-item.html' class='btn btn-primary btn-has-icon icon-right'><i class='fa fa-link'></i> View more</a>
-											">
-												<i class="fa fa-plus"></i>
-											</a>
-											<a href="gallery-single-item.html" class="btn btn-primary btn-single-icon btn-gallery-link">
-												<i class="fa fa-link"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="gallery-item col-xs-4 col-md-4 workplace">
-									<div class="gallery-item-holder">
-										<figure class="gallery-img">
-											<a href="#">
-												<img src="images/samples/gallery-img5.jpg" alt="">
-											</a>
-										</figure>
-										<div class="gallery-details">
-											<h5 class="gallery-title">Galllery Image title</h5>
-											<a href="images/samples/gallery-l-img2.jpg" class="btn btn-primary btn-single-icon btn-gallery-plus magnific-popup__custom-title"
-											 data-desc="
-												Gallery Image Title <a href='gallery-single-item.html' class='btn btn-primary btn-has-icon icon-right'><i class='fa fa-link'></i> View more</a>
-											">
-												<i class="fa fa-plus"></i>
-											</a>
-											<a href="gallery-single-item.html" class="btn btn-primary btn-single-icon btn-gallery-link">
-												<i class="fa fa-link"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-								<div class="gallery-item col-xs-4 col-md-4 workplace workflow">
-									<div class="gallery-item-holder">
-										<figure class="gallery-img">
-											<a href="#">
-												<img src="images/samples/gallery-img6.jpg" alt="">
-											</a>
-										</figure>
-										<div class="gallery-details">
-											<h5 class="gallery-title">Galllery Image title</h5>
-											<a href="images/samples/gallery-l-img2.jpg" class="btn btn-primary btn-single-icon btn-gallery-plus magnific-popup__custom-title"
-											 data-desc="
-												Gallery Image Title <a href='gallery-single-item.html' class='btn btn-primary btn-has-icon icon-right'><i class='fa fa-link'></i> View more</a>
-											">
-												<i class="fa fa-plus"></i>
-											</a>
-											<a href="gallery-single-item.html" class="btn btn-primary btn-single-icon btn-gallery-link">
-												<i class="fa fa-link"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Gallery Feed / End -->
+
 						</div>
 					</div>
+
 
 				</div>
 			</section>
-		<!-- Footer -->
-		<footer class="footer page-section">
-			<div class="container">
-				<div class="footer-inner">
+			<!-- Footer -->
+			<footer class="footer page-section">
+				<div class="container">
+					<div class="footer-inner">
 
-					<!-- Footer Social Links -->
-					<ul class="footer-social-links footer-social-links__rounded list-inline text-center">
-						<li>
-							<a href="#" title="LinkedIn">
-								<i class="fa fa-linkedin"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" title="Facebook">
-								<i class="fa fa-facebook"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" title="Twitter">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" title="VK">
-								<i class="fa fa-vk"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" title="Instagram">
-								<i class="fa fa-instagram"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" title="Github">
-								<i class="fa fa-github"></i>
-							</a>
-						</li>
-						<li>
-							<a href="#" title="Youtube">
-								<i class="fa fa-youtube-play"></i>
-							</a>
-						</li>
-					</ul>
+						<!-- Footer Social Links -->
+						<ul class="footer-social-links footer-social-links__rounded list-inline text-center">
+							<li>
+								<a href="#" title="LinkedIn">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Twitter">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="VK">
+									<i class="fa fa-vk"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Instagram">
+									<i class="fa fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Github">
+									<i class="fa fa-github"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" title="Youtube">
+									<i class="fa fa-youtube-play"></i>
+								</a>
+							</li>
+						</ul>
 
-					<div class="footer-text text-center">
-						<div class="row">
-							<div class="col-sm-4 col-md-4">
-								<a href="#">www.cittsb.cl</a>
+						<div class="footer-text text-center">
+							<div class="row">
+								<div class="col-sm-4 col-md-4">
+									<a href="#">www.cittsb.cl</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+			</footer>
+		</div>
+		<div id="back-top">
+			<div class="link-holder scroll-local">
+				<a href="#top" class="top-link">
+					<i class="fa fa-chevron-up"></i>
+				</a>
 			</div>
-		</footer>
-	</div>
-	<div id="back-top">
-		<div class="link-holder scroll-local">
-			<a href="#top" class="top-link">
-				<i class="fa fa-chevron-up"></i>
-			</a>
+			<div class="link-holder scroll-local">
+				<a href="#section-contacts" class="contacts-link" data-toggle="tooltip" data-placement="left" title="Contact Us">
+					<i class="fa fa-envelope"></i>
+				</a>
+			</div>
 		</div>
-		<div class="link-holder scroll-local">
-			<a href="#section-contacts" class="contacts-link" data-toggle="tooltip" data-placement="left" title="Contact Us">
-				<i class="fa fa-envelope"></i>
-			</a>
-		</div>
-	</div>
 
-	<script src="vendor/jquery/jquery-1.11.2.min.js"></script>
-	<script src="vendor/jquery/jquery-migrate-1.2.1.min.js"></script>
-	<script src="vendor/jquery.easing.1.3.js"></script>
-	<script src="vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="vendor/bootstrap/bootstrap-scripts.js"></script>
-	<script src="vendor/bootstrap/fhmm.js"></script>
-	<script src="vendor/jquery.flickrfeed.js"></script>
-	<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
-	<script src="vendor/isotope/isotope.pkgd.min.js"></script>
-	<script src="vendor/isotope/jquery.imagesloaded.min.js"></script>
-	<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<script src="vendor/nouislider/jquery.nouislider.all.min.js"></script>
-	<script src="vendor/royalslider/jquery.royalslider.min.js"></script>
-	<script src="vendor/jquery.parallax-1.1.3.js"></script>
-	<script src="vendor/jcountdown/jquery.jcountdown.js"></script>
-	<script src="vendor/wow.min.js"></script>
-	<script src="vendor/jquery.countTo.js"></script>
-	<script src="vendor/jquery.scrollTo.min.js"></script>
-	<script src="vendor/jquery.localScroll.min.js"></script>
-	<script src="vendor/jquery.viewport.mini.js"></script>
-	<script src="js/jssor.slider.min.js"></script>
-	<script src="vendor/jquery.gmap3.min.js"></script>
-	<script src="vendor/jquery.validate.js"></script>
-	<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-	<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="vendor/jquery/jquery-1.11.2.min.js"></script>
+		<script src="vendor/jquery/jquery-migrate-1.2.1.min.js"></script>
+		<script src="vendor/jquery.easing.1.3.js"></script>
+		<script src="vendor/bootstrap/bootstrap.min.js"></script>
+		<script src="vendor/bootstrap/bootstrap-scripts.js"></script>
+		<script src="vendor/bootstrap/fhmm.js"></script>
+		<script src="vendor/jquery.flickrfeed.js"></script>
+		<script src="vendor/owl-carousel/owl.carousel.min.js"></script>
+		<script src="vendor/isotope/isotope.pkgd.min.js"></script>
+		<script src="vendor/isotope/jquery.imagesloaded.min.js"></script>
+		<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script src="vendor/nouislider/jquery.nouislider.all.min.js"></script>
+		<script src="vendor/royalslider/jquery.royalslider.min.js"></script>
+		<script src="vendor/jquery.parallax-1.1.3.js"></script>
+		<script src="vendor/jcountdown/jquery.jcountdown.js"></script>
+		<script src="vendor/wow.min.js"></script>
+		<script src="vendor/jquery.countTo.js"></script>
+		<script src="vendor/jquery.scrollTo.min.js"></script>
+		<script src="vendor/jquery.localScroll.min.js"></script>
+		<script src="vendor/jquery.viewport.mini.js"></script>
+		<script src="js/jssor.slider.min.js"></script>
+		<script src="vendor/jquery.gmap3.min.js"></script>
+		<script src="vendor/jquery.validate.js"></script>
+		<script src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-	<script>
-		jQuery(document).ready(function () {
-			jQuery('.tp-banner').revolution({
-				delay: 6000,
-				startwidth: 1140,
-				startheight: 583,
-				hideThumbs: 10,
-				hideTimerBar: "on",
-				fullWidth: "off",
-				forceFullWidth: "off",
-				hideCaptionAtLimit: 480,
-				soloArrowLeftHOffset: 20,
-				soloArrowRightHOffset: 20,
-				soloArrowLeftValign: "center",
-				soloArrowRightValign: "center",
-				soloArrowLeftVOffset: -100,
-				soloArrowRightVOffset: -100,
-				navigationType: "bullet",
-				navigationArrows: "solo", // nexttobullets, solo (old name verticalcentered), none
-				navigationStyle: "round",  // round, square, navbar, round-old, square-old, navbar-old 
-				navigationVOffset: 116
+		<script>
+			jQuery(document).ready(function () {
+				jQuery('.tp-banner').revolution({
+					delay: 6000,
+					startwidth: 1140,
+					startheight: 583,
+					hideThumbs: 10,
+					hideTimerBar: "on",
+					fullWidth: "off",
+					forceFullWidth: "off",
+					hideCaptionAtLimit: 480,
+					soloArrowLeftHOffset: 20,
+					soloArrowRightHOffset: 20,
+					soloArrowLeftValign: "center",
+					soloArrowRightValign: "center",
+					soloArrowLeftVOffset: -100,
+					soloArrowRightVOffset: -100,
+					navigationType: "bullet",
+					navigationArrows: "solo", // nexttobullets, solo (old name verticalcentered), none
+					navigationStyle: "round",  // round, square, navbar, round-old, square-old, navbar-old 
+					navigationVOffset: 116
+				});
 			});
-		});
-	</script>
+		</script>
+		<script>
+			jQuery(document).ready(function ($) {
+
+				$('#myCarousel').carousel({
+					interval: 5000
+				});
+
+				//Handles the carousel thumbnails
+				$('[id^=carousel-selector-]').click(function () {
+					var id_selector = $(this).attr("id");
+					try {
+						var id = /-(\d+)$/.exec(id_selector)[1];
+						console.log(id_selector, id);
+						jQuery('#myCarousel').carousel(parseInt(id));
+					} catch (e) {
+						console.log('Regex failed!', e);
+					}
+				});
+				// When the carousel slides, auto update the text
+				$('#myCarousel').on('slid.bs.carousel', function (e) {
+					var id = $('.item.active').data('slide-number');
+					$('#carousel-text').html($('#slide-content-' + id).html());
+				});
+			});
+		</script>
 </body>
 
 </html>
