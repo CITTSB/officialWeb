@@ -19,6 +19,8 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
 	 crossorigin="anonymous"></script>
 	<script src="vendor/modernizr.js"></script>
+
+	<script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 	<!-- Map google -->
 	<style>
 		.google-maps {
@@ -99,14 +101,15 @@
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
-						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>						
+						<li data-target="#myCarousel" data-slide-to="3"></li>
 					</ol>
 
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">
 
 						<div class="item active">
-							<img src="images/control-z/cataTuRuta.jpg" alt="Los Angeles" style="width:100%;">
+							<img src="images/slider/1.jpg" alt="evento1" style="width:100%;">
 							<div class="carousel-caption">
 								<h5 class="text-danger">Tu Ruta Desafío CTRL-Z 2017</h5>
 								<p>Ganadores del desafío de innovación</p>
@@ -118,16 +121,22 @@
 						</div>
 
 						<div class="item">
-							<img src="images/control-z/cataTuRuta.jpg" alt="Chicago" style="width:100%;">
+							<img src="images/slider/4.jpg" alt="evento2" style="width:100%;">
 							<div class="carousel-caption">
-								<h2>Chicago</h2>
-								<p>Thank you, Chicago!</p>
+								<h5 class="text-danger">DRON DUOC UC SEDE SAN BERNARDO 2018</h5>
+								<p></p>
 
 							</div>
 						</div>
 
 						<div class="item">
-							<img src="images/control-z/cataTuRuta.jpg" alt="New York" style="width:100%;">
+							<img src="images/slider/2.jpg" alt="evento3" style="width:100%;">
+							<div class="carousel-caption">
+								<h5 class="text-danger">DRON DUOC UC SEDE SAN BERNARDO 2018</h5>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/slider/3.jpg" alt="evento4" style="width:100%;">
 							<div class="carousel-caption">
 								<h3>New York</h3>
 								<p>We love the Big Apple!</p>
@@ -152,8 +161,6 @@
 
 		<!-- Content -->
 		<div class="content-wrapper">
-
-			<!-- Page Section (About) -->
 			<section class="page-section" id="section-about">
 				<div class="container">
 
@@ -252,7 +259,7 @@
 					</div>
 				</div>
 			</section>
-
+			<!--
 			<section class="page-section" id="section-features">
 				<div class="container">
 					<div class="panel-group panel-group__features panel-icon__effect2" id="accordion4" role="tablist" aria-multiselectable="true">
@@ -420,7 +427,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="page-section page-section__dark" id="section-gallery">
 				<div class="container">
@@ -614,12 +621,28 @@
 				</div>
 			</section>
 
+			<section class="page-section page-section__no-bottom-padding" id="img360">
+				<div id='vrview' class="text-center"></div>
+				<script>
+					window.addEventListener('load', onVrViewLoad);
+					function onVrViewLoad() {
+						// Selector '#vrview' finds element with id 'vrview'.
+						var vrView = new VRView.Player('#vrview', {
+							image: 'https://i.github.com/CITTSB/officialWeb/blob/master/PaginaWeb/images/360.jpg?raw=true',
+							preview: 'https://i.github.com/CITTSB/officialWeb/blob/master/PaginaWeb/images/360.jpg?raw=true',
+							is_stereo: false,
+							is_debug: true
+						});
+					}
+				</script>
+			</section>
+
 			<section class="page-section page-section__no-bottom-padding" id="section-contacts">
 				<div class="container">
 
 					<div class="section-title-wrapper">
 						<div>
-							<h1 class="">Contactenos</h1>
+							<h1 class="">Contáctenos</h1>
 							<h4 class="section-desc">Tienes alguna pregunta o una idea innovadora</h4>
 
 						</div>
@@ -627,7 +650,7 @@
 
 
 					<form action="" id="contact-form" class="contact-form" method="POST">
-						
+
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
@@ -719,9 +742,9 @@
 								<a href="http://www.cittsb.cl/">www.cittsb.cl</a>
 							</div>
 							<div class="col-sm-6 col-md-6">
-									
-									<img src="images/fondos/cna-fondo-blanco.jpg" alt="" class="respondive-img left" width="200 px">
-								</div>
+
+								<img src="images/fondos/cna-fondo-blanco.jpg" alt="" class="respondive-img left" width="200 px">
+							</div>
 						</div>
 					</div>
 				</div>
