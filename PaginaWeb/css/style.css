@@ -2160,7 +2160,7 @@ fieldset[disabled] .btn-link:focus {
 }
 /* 6.3. Page Section Darkest */
 .page-section__darkest {
-  background-color: #36274c;
+  background-color: #232150;
   background-image: url(../images/bg-section-darkest.jpg);
   background-position: center center;
   background-repeat: no-repeat;
