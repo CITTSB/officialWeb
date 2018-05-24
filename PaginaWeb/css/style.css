@@ -1290,7 +1290,7 @@ button.bg-light:focus {
   background-color: #000000 !important;
 }
 .bg-citt {
-  background-color: #282753 !important;
+  background-color: rgba(40, 39, 83,0.5) !important;
 }
 .text-citt{
   color: #282753 !important;
@@ -2162,8 +2162,8 @@ fieldset[disabled] .btn-link:focus {
 .page-section__darkest {
   background-color: #232150;
   background-image: url(../images/bg-section-darkest.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-position: top center;
+  background-repeat: repeat-y;
   color: #fff;
   padding: 114px 0 150px 0;
   overflow: hidden;
