@@ -2160,7 +2160,7 @@ fieldset[disabled] .btn-link:focus {
 }
 /* 6.3. Page Section Darkest */
 .page-section__darkest {
-  background-color: #36274c;
+  background-color: #232150;
   background-image: url(../images/bg-section-darkest.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -6583,7 +6583,7 @@ img.mfp-img {
 */
 /* 30.1. Top Wrapper */
 .top-wrapper {
-  background-color: #36274c;
+  background-color: #232152;
   background-image: url(../images/bg1.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -7969,7 +7969,7 @@ img.mfp-img {
 // --------------------------------------------------
 */
 .footer {
-  background-color: #36274c;
+  background-color: #232152;
   background-image: url(../images/bg-footer.jpg);
   background-position: 50% 0;
   background-repeat: no-repeat;
