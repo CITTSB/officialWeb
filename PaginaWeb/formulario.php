@@ -3,15 +3,17 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\POP3;
+use PHPMailer\PHPMailer\Exception;
 
 require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/POP3.php';
 require 'PHPMailer/SMTP.php';
+require 'PHPMailer/Exception.php';
 
 if (isset($_POST["opcion"])){
     if($_POST["opcion"]=="Enviar Mensaje"){
         //Envio de correo recepcion
-        $mail = new PHPMailer;
+        $mail = new PHPMailer(true);
 
         $correo = $_POST['correo'];
         $mensaje = $_POST['mensaje'];
@@ -39,7 +41,7 @@ if (isset($_POST["opcion"])){
         $mail->Body = $m;
 
         //correo al que lo envio
-        $mail2 = new PHPMailer;
+        $mail2 = new PHPMailer(true);
         $mail2->isSMTP();                                      // Set mailer to use SMTP
         $mail2->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail2->SMTPAuth = true;                               // Enable SMTP authentication
