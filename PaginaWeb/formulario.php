@@ -17,7 +17,7 @@ if (isset($_POST["opcion"])){
         $mensaje = $_POST['mensaje'];
         $nombre = $_POST['nombre'];
 
-        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->isSMTP();                                      // Set mailer to use SMTP xd
         $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                               // Enable SMTP authentication
         $mail->Username = 'cittsb.contacto@gmail.com';                 // SMTP username
