@@ -1,6 +1,12 @@
 <?php
 
-require 'PHPMailer/PHPMailerAutoload.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\POP3;
+
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/POP3.php';
+require 'PHPMailer/SMTP.php';
 
 if (isset($_POST["opcion"])){
     if($_POST["opcion"]=="Enviar Mensaje"){
