@@ -37,18 +37,11 @@
 					</header>
 					<div class="page-404-desc">
                    
-                    <?php 
-                        $dato = php_uname();
-                        $REMOTE_ADDR = "";
-                        $ip = GetHostByName($REMOTE_ADDR);
-                        $nombre = gethostname(); 	
-						$SERVER = $_SERVER['REMOTE_ADDR'];
-						
-                        ?>
+                    <?php $SERVER = $_SERVER['REMOTE_ADDR']; ?>
 						<p> Estimado gracias por visitar www.cittsb.cl</p>
                         <a href="index.php" class="btn btn-primary btn-has-icon"><i class="fa fa-home"></i>Volver Inicio</a>
                         <br>
-                        <p> <?php /*echo "Datos: <br> $dato <br> IP : $ip <br> Name: $nombre" */ echo "Datos: $SERVER "  ?> </p>
+                        <p> <?php echo "Tu IP : $SERVER "  ?> </p>
 					</div>
 				</div>
 			</div>
@@ -71,17 +64,7 @@
 				</div>
 			</div>
 		</div>
-
 	</div>
-	
-
-<?php
-$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
-echo $hostname;
-$REMOTE_ADDR=$hostname;
-$ip= $REMOTE_ADDR;
-echo " Your hostname : " . GetHostByName($ip);
-?>
 	
 	<!-- Javascript Files
 	================================================== -->

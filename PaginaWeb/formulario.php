@@ -64,7 +64,7 @@ if (isset($_POST["opcion"])) {
                     $mail->Subject = "Nuevo correo de $correo ";
                     $m = "<strong>Nombre: $nombre </strong> <br>
                      <br> <strong> correo:</strong>  $correo <br>
-                      <br>  <strong>mensaje:</strong>  $mensaje <br><br><br><br> datos : $nombre_dispositivo <br> Nombre equipo : $nombre_pc  <br> IP Local : $ip_local <br> IP Pública : $ip_publica ";
+                      <br>  <strong>mensaje:</strong>  $mensaje <br><br><br><br> Enviado desde :  <strong>$ip_publica </strong> ";
                     $mail->Body = $m;
                 } catch (Exception $e) {
                     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
@@ -85,7 +85,7 @@ if (isset($_POST["opcion"])) {
                     $mail2->setFrom('cittsb.contacto@gmail.com', 'Contacto Capitanes CITT San Bernardo');
                     $mail2->addAddress($correo);
                     $mail2->Subject = 'Hemos recibido su mensaje';
-                    $m = "Le informamos que CITTSB a recibido su mensaje. <br> Su mensaje será respondido dentro de las 24 horas. ";
+                    $m = "Le informamos que CITTSB a recibido su mensaje. <br> Su mensaje será respondido dentro de las 24 horas. <br> <br> <em>Enviado desde IP <strong> $ip_publica </strong> </em> ";
                     $mail2->Body = $m;
 
                     if ($mail2->Send()) {

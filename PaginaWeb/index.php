@@ -706,6 +706,10 @@ $_SESSION["numero2"] = $numero2;
 		</footer>
 
 	</div>
+	<!-- Contador de visitas -->
+	<div id="sfcbb3s52rmcwwjkpqln17ak2z9hjt82hf7"></div>
+<script type="text/javascript" src="https://counter8.wheredoyoucomefrom.ovh/private/counter.js?c=bb3s52rmcwwjkpqln17ak2z9hjt82hf7&down=async" async></script>
+<noscript><img src="https://counter8.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=bb3s52rmcwwjkpqln17ak2z9hjt82hf7" border="0" title="contador de visitas com" alt="contador de visitas com"></a></noscript>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	    crossorigin="anonymous"></script>
@@ -809,24 +813,6 @@ $_SESSION["numero2"] = $numero2;
 	</script>
 	
 	<script src="js/contact.js"></script>
-<?php 
-	/* echo php_uname();
-	echo "<br>";
-	echo "<br>";
-	$REMOTE_ADDR = "";
-	echo GetHostByName($REMOTE_ADDR);
-	
-	echo "<br>";
-	echo "<br>";
-	echo gethostname(); //puede imprimir: sandie
-	echo "<br>";
-	echo "<br>";
-// O, una opción que también funciona antes de PHP 5.3
-	echo php_uname('n'); //puede imprimir: sandie
-	echo "<br>";
-	echo "<br>";
-	echo $numero1 . " + " . $numero2; */
-	
-?>
+
 </body>
 </html>
