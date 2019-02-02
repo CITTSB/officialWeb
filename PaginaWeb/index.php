@@ -118,7 +118,7 @@ $_SESSION["numero2"] = $numero2;
 							<div id="navbar" class="navbar-collapse collapse">
 								<ul class="nav navbar-nav scroll-local">
 									<li>
-										<a href="index.html">Home</a>
+										<a href="#">Home</a>
 									</li>
 									<li>
 										<a href="#section-about">Nosotros</a>
