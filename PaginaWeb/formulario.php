@@ -34,6 +34,7 @@ if (isset($_POST["opcion"])) {
                 $REMOTE_ADDR = "";
                 $ip_local = GetHostByName($REMOTE_ADDR);
                 $nombre_pc = gethostname(); 	
+                $ip_publica = $_SERVER['REMOTE_ADDR'];
                 
 
                //Envio de correo recepcion
@@ -63,7 +64,7 @@ if (isset($_POST["opcion"])) {
                     $mail->Subject = "Nuevo correo de $correo ";
                     $m = "<strong>Nombre: $nombre </strong> <br>
                      <br> <strong> correo:</strong>  $correo <br>
-                      <br>  <strong>mensaje:</strong>  $mensaje <br><br><br><br> datos : $nombre_dispositivo <br> Nombre equipo : $nombre_pc  <br> IP Local : $ip_local";
+                      <br>  <strong>mensaje:</strong>  $mensaje <br><br><br><br> datos : $nombre_dispositivo <br> Nombre equipo : $nombre_pc  <br> IP Local : $ip_local <br> IP Pública : $ip_publica ";
                     $mail->Body = $m;
                 } catch (Exception $e) {
                     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
