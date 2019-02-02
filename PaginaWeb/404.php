@@ -42,11 +42,12 @@
                         $REMOTE_ADDR = "";
                         $ip = GetHostByName($REMOTE_ADDR);
                         $nombre = gethostname(); 	
+                        $SERVER = $_SERVER['REMOTE_ADDR'];
                         ?>
 						<p> Estimado gracias por visitar www.cittsb.cl</p>
                         <a href="index.php" class="btn btn-primary btn-has-icon"><i class="fa fa-home"></i>Volver Inicio</a>
                         <br>
-                        <p> <?php echo "Datos: <br> $dato <br> IP : $ip <br> Name: $nombre"?> </p>
+                        <p> <?php /*echo "Datos: <br> $dato <br> IP : $ip <br> Name: $nombre" */ echo "Datos: $SERVER" ?> </p>
 					</div>
 				</div>
 			</div>
