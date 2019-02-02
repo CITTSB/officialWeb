@@ -73,7 +73,15 @@
 		</div>
 
 	</div>
-	<?php print_r($_SERVER); ?>
+	
+
+<?php
+$hostname = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+echo $hostname;
+$REMOTE_ADDR=$hostname;
+$ip= $REMOTE_ADDR;
+echo " Your hostname : " . GetHostByName($ip);
+?>
 	
 	<!-- Javascript Files
 	================================================== -->
