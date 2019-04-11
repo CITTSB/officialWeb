@@ -310,7 +310,7 @@ $_SESSION["numero2"] = $numero2;
 					<div class="section-title-wrapper">
 						<div class="section-title-inner">
 							<h1 class="section-title">EVENTOS</h1>
-							<span class="section-desc">PRIMER SEMESTRE 2018</span>
+							<span class="section-desc">PRIMER SEMESTRE 2019</span>
 						</div>
 					</div>
 
