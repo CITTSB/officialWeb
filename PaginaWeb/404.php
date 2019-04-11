@@ -41,7 +41,7 @@
 						<p> Estimado gracias por visitar www.cittsb.cl</p>
                         <a href="index.php" class="btn btn-primary btn-has-icon"><i class="fa fa-home"></i>Volver Inicio</a>
                         <br>
-                        <p> <?php echo "Tu IP : $SERVER "  ?> </p>
+                        <p> <?php echo "Tu IP : $SEgitRVER "  ?> </p>
 					</div>
 				</div>
 			</div>

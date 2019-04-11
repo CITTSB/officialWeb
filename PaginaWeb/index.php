@@ -1,8 +1,6 @@
 <?php 
 session_start();
-
 $mensaje = "";
-
 $enviado="hidden";
 $error="hidden";
 
@@ -10,19 +8,16 @@ if(isset($_SESSION['mensaje'])){
 	$activado = true;
 	$mensaje = $_SESSION['mensaje'];
 
-	if($mensaje=="500"){
-
-	}
-	if($mensaje=="400"){
+	if($mensaje=="400"){ // No se envio
 		$enviado="hidden";
 		$error="";
 	}
-	if($mensaje=="200"){
+	if($mensaje=="200"){ // Se envio
 		$enviado="";
 		$error="hidden";
 	}
 
-	$_SESSION["mensaje"] = null;
+	$_SESSION["mensaje"] = null; // vuelve hacer null
 }
 
 //Numero random
@@ -87,10 +82,8 @@ $_SESSION["numero2"] = $numero2;
 </head>
 
 <body>
-
 	<div class="page-wrapper">
 		<div class="top-wrapper top-wrapper__bg1" id="top">
-
 			<!-- Header -->
 			<header class="header header__fixed">
 				<div class="header-main">
@@ -133,12 +126,15 @@ $_SESSION["numero2"] = $numero2;
 										<a href="#section-contacts">Contacto</a>
 									</li>
 									<li>
-										<a href="#" class="btn btn-lg bg-warning">NOTICIAS</a>
+										<!-- <a href="#" class="btn btn-lg bg-warning">NOTICIAS</a> -->
+											<!-- POP up -->
+										<a href="#ModalPop" role="button" class="btn btn-large bg-primary btn-primary" data-toggle="modal">Encuesta</a>
+  
 									</li>
-									<li>
+									<!-- <li>
 										<a href="https://docs.google.com/forms/d/e/1FAIpQLSd0ZfO6miVjxfjXFEmtCA0k-rUpuqSj_MKI8vRpdFqk2Vuzaw/viewform?embedded=true"
 										    class="btn btn-lg bg-danger" target="_blank">INSCRIPCIÓN DE PROYECTOS</a>
-									</li>
+									</li> -->
 								</ul>
 							</div>
 						</nav>
@@ -251,6 +247,26 @@ $_SESSION["numero2"] = $numero2;
 			</div>
 		</div>
 
+	
+		<!-- Modal / Ventana / Overlay en HTML -->
+		<div id="ModalPop" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">¿Que taller te gustaría que se impartiera en el CITT?</h4>
+					</div>
+					<div class="modal-body">
+						<center><h2>Inscríbete con nosotros</h2></center>						
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSf5cyBGR0LZvHj7WZxDg1k2-WYLnekwGeGPJYkYKWt_7BurRw/viewform?usp=sf_link" target="_blink" class="btn btn-block btn-primary">Inscríbete aquí</a>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- CONTENIDOS -->
 		<div class="content-wrapper">
 
@@ -304,7 +320,7 @@ $_SESSION["numero2"] = $numero2;
 							<a href="#" class="item-link">
 								<h5>Bienvenida CITT</h5>
 								<div class="desc-holder">
-									<span class="desc">5 abril</span>
+									<span class="desc">11 abril</span>
 								</div>
 							</a>
 						</div>
@@ -370,7 +386,7 @@ $_SESSION["numero2"] = $numero2;
 						</div>
 					</div>
 					<div class="row text-center">
-						<div class="col-md-3 col-sm-6">
+						<!-- <div class="col-md-3 col-sm-6">
 							<div class="people">
 								<img class="team-thumb img-circle" src="images/miniaturas/pablo_saldana.png" alt="" width="150px" height="150px" />
 								<h3>Pablo Saldaña</h3>
@@ -380,7 +396,6 @@ $_SESSION["numero2"] = $numero2;
 								</p>
 							</div>
 						</div>
-						<!--
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
 								<img class="team-thumb img-circle" src="images/miniaturas/profe_claudia2.jpg" alt="" width="150px" height="150px"
@@ -391,7 +406,8 @@ $_SESSION["numero2"] = $numero2;
 									<span class="text-info">cl.bustamantev@profesor.duoc.cl</span>
 								</p>
 							</div>
-						</div>
+						</div> 
+						-->
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
 								<img class="team-thumb img-circle" src="images/miniaturas/profe_orlan2.jpg" alt="cara_Orlan" width="150px" height="150px"
@@ -399,18 +415,40 @@ $_SESSION["numero2"] = $numero2;
 								<h3>Orlan Parra</h3>
 								<p>Profesor & Coordinador CITT
 									<br>
-									<spam class="text-info">orl.parra@profesor.duoc.cl</spam>
+									<span class="text-info">orl.parra@profesor.duoc.cl</span>
+								</p>
+							</div>
+						</div>	
+						<div class="col-md-3 col-sm-6">
+							<div class="people">
+								<img class="team-thumb img-circle" src="images/miniaturas/user.png" alt="cara_Orlan" width="150px" height="150px"
+								/>
+								<h3>Vanessa Saez</h3>
+								<p>Profesor & Coordinadora CITT
+									<br>
+									<span class="text-info">va.saez@profesor.duoc.cl</span>
 								</p>
 							</div>
 						</div>
-						-->
+
+						<div class="col-md-3 col-sm-6">
+							<div class="people">
+								<img class="team-thumb img-circle" src="images/miniaturas/Michael.jpg" alt="cara_m" width="150px" height="150px" />
+								<h3>Michel Catalán</h3>
+								<p>Profesor & Docente CITT 
+									<br>
+									<span class="text-info"></span>
+								</p>
+							</div>
+						</div>
+						
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
 								<img class="team-thumb img-circle" src="images/miniaturas/Matias.jpg" alt="cara_Mati" width="150px" height="150px" />
 								<h3>Matias Cáceres</h3>
 								<p>Encargado de Laboratorio
 									<br>
-									<spam class="text-info"></spam>
+									<span class="text-info"></span>
 								</p>
 							</div>
 						</div>
@@ -425,10 +463,10 @@ $_SESSION["numero2"] = $numero2;
 						</div>
 					</div>
 					<div class="col-md-12">
-						<p> <strong>"Próximamente listado de los nuevos capitanes CITT 2019"</strong> </p>
+						<p> <strong>"Listado de los nuevos capitanes CITT 2019"</strong> </p>
 					</div>
 					<!-- Falta asignar nuevos capitanes 2019-->
-					<!-- 
+					
 					<div class="row">
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
@@ -437,39 +475,7 @@ $_SESSION["numero2"] = $numero2;
 								<h3>Karina Jofré</h3>
 								<p>INGENIERIA EN INFORMÁTICA
 									<br>
-									<spam class="text-info">kar.jofre@alumnos.duoc.cl</spam>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/CatalindaVera.jpg" alt="cara_catalina" width="150px" height="150px"
-								/>
-								<h3>Catalina Vera</h3>
-								<p>INGENIERIA EN INFORMÁTICA
-									<br>
-									<spam class="text-info">ca.verah@alumnos.duoc.cl</spam>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/Mariajesus.jpg" alt="" width="150px" height="150px" />
-								<h4>María Jesús Aguirre</h4>
-								<p>INGENIERÍA EN CONSTRUCCIÓN
-									<br>
-									<spam class="text-info">m.aguirre@alumnos.duoc.cl</spam>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/Esteban.jpg" alt="cara_esteban" width="150px" height="150px"
-								/>
-								<h3>Estebán Millares</h3>
-								<p>INGENIERÍA EN CONSTRUCCIÓN
-									<br>
-									<spam class="text-info">e.millares@alumnos.duoc.cl</spam>
+									<span class="text-info">kar.jofre@alumnos.duoc.cl</span>
 								</p>
 							</div>
 						</div>
@@ -480,7 +486,7 @@ $_SESSION["numero2"] = $numero2;
 								<h3>Sebastián Orrego</h3>
 								<p>INGENIERIA EN INFORMÁTICA
 									<br>
-									<spam class="text-info">s.orregoa@alumnos.duoc.cl</spam>
+									<span class="text-info">s.orregoa@alumnos.duoc.cl</span>
 								</p>
 							</div>
 						</div>
@@ -491,69 +497,19 @@ $_SESSION["numero2"] = $numero2;
 								<h3>Benjamín Mora</h3>
 								<p>INGENIERIA EN INFORMÁTICA
 									<br>
-									<spam class="text-info">b.morat@alumnos.duoc.cl</spam>
+									<span class="text-info">b.morat@alumnos.duoc.cl</span>
 								</p>
 							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/pato.jpg" alt="" width="150px" height="150px" />
-								<h3>Patricio Rojas</h3>
-								<p>INGENIERIA EN INFORMÁTICA
-									<br>
-									<spam class="text-info">pat.rojasm@alumnos.duoc.cl</spam>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/Julio.jpg" alt="cara_yulio" width="150px" height="150px" />
-								<h3>Julio Herrera</h3>
-								<p id="yulio">INGENIERIA EN INFORMÁTICA
-									<br>
-									<spam class="text-info">juli.herrera@alumnos.duoc.cl</spam>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/Sebatian-.jpg" alt="cara_seba" width="150px" height="150px"
-								/>
-								<h3>Sebastián Donoso</h3>
-								<p>INGENIERIA EN INFORMÁTICA
-									<br>
-									<spam class="text-info">s.donosoz@alumnos.duoc.cl</spam>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/Carlos.jpg" alt="cara_carlos" width="150px" height="150px" />
-								<h3>Carlos Romero</h3>
-								<p>INGENIERIA EN INFORMÁTICA
-									<br>
-									<spam class="text-info">car.romerop@alumnos.duoc.cl</spam>
-								</p>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/Michael.jpg" alt="cara_m" width="150px" height="150px" />
-								<h3>Michel Catalán</h3>
-								<p>INGENIERIA EN INFORMÁTICA
-									<br>
-									<spam class="text-info">mich.catalan@alumnos.duoc.cl</spam>
-								</p>
-							</div>
-						</div>
+						</div>		
+					
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
 								<img class="team-thumb img-circle" src="images/miniaturas/byron_sepulveda.png" alt="cara_bayron" width="150px" height="150px"
 								/>
 								<h3>Byron Sepúlveda</h3>
-								<p>ANALISTA PROGRAMADOR
+								<p>INGENIERIA EN INFORMÁTICA
 									<br>
-									<spam class="text-info">by.sepulvedas@alumnos.duoc.cl</spam>
+									<span class="text-info">by.sepulvedas@alumnos.duoc.cl</span>
 								</p>
 							</div>
 						</div>
@@ -564,13 +520,23 @@ $_SESSION["numero2"] = $numero2;
 								<h3>Leonardo Romero</h3>
 								<p>ANALISTA PROGRAMADOR
 									<br>
-									<spam class="text-info">leon.romero@alumnos.duoc.cl</spam>
+									<span class="text-info">leon.romero@alumnos.duoc.cl</span>
+								</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="people">
+								<img class="team-thumb img-circle" src="images/miniaturas/user.png" alt="cara_leo" width="150px" height="150px"/>
+								<h3>Mike</h3>
+								<p>ANALISTA PROGRAMADOR
+									<br>
+									<span class="text-info"></span>
 								</p>
 							</div>
 						</div>
 					</div>
 
-				-->
+				
 				</div>
 
 			</section>
@@ -706,11 +672,6 @@ $_SESSION["numero2"] = $numero2;
 		</footer>
 
 	</div>
-	<!-- Contador de visitas -->
-	<div id="sfcbb3s52rmcwwjkpqln17ak2z9hjt82hf7"></div>
-<script type="text/javascript" src="https://counter8.wheredoyoucomefrom.ovh/private/counter.js?c=bb3s52rmcwwjkpqln17ak2z9hjt82hf7&down=async" async></script>
-<noscript><img src="https://counter8.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=bb3s52rmcwwjkpqln17ak2z9hjt82hf7" border="0" title="contador de visitas com" alt="contador de visitas com"></a></noscript>
-
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	    crossorigin="anonymous"></script>
 	<!--<script src="vendor/jquery/jquery-1.11.2.min.js"></script>-->
@@ -810,6 +771,9 @@ $_SESSION["numero2"] = $numero2;
 			$(this).html("INGENIERÍA EN INFORMÁTICA").append($("<br>")).append($("<span>").addClass("text-info").html(
 				"juli.herrera@alumnos.duoc.cl"))
 		})
+
+
+		$('#ModalPop').modal('show');
 	</script>
 	
 	<script src="js/contact.js"></script>
