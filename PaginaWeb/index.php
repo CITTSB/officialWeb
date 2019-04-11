@@ -421,7 +421,7 @@ $_SESSION["numero2"] = $numero2;
 						</div>	
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/user.png" alt="cara_Orlan" width="150px" height="150px"
+								<img class="team-thumb img-circle" src="images/miniaturas/tia-vanessa.jpg" alt="cara_Orlan" width="150px" height="150px"
 								/>
 								<h3>Vanessa Saez</h3>
 								<p>Profesor & Coordinadora CITT
@@ -459,7 +459,7 @@ $_SESSION["numero2"] = $numero2;
 					<div class="section-title-wrapper">
 						<div class="section-title-inner">
 							<h3 class="section-title">Capitanes</h3>
-							<p> <em>Lider en sus compañeros, refleja los valores instuticionales, apoya la gestión de sus coordinadores CITT.</em></p>
+							<p> <em>Lider en sus compañeros, refleja los valores institucionales, apoya la gestión de sus coordinadores CITT.</em></p>
 						</div>
 					</div>
 					<div class="col-md-12">
@@ -526,7 +526,7 @@ $_SESSION["numero2"] = $numero2;
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/user.png" alt="cara_leo" width="150px" height="150px"/>
+								<img class="team-thumb img-circle" src="images/miniaturas/mike.jpg" alt="cara_leo" width="150px" height="150px"/>
 								<h3>Mike</h3>
 								<p>ANALISTA PROGRAMADOR
 									<br>
