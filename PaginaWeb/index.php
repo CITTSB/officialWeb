@@ -154,19 +154,27 @@ $_SESSION["numero2"] = $numero2;
 						<li data-target="#myCarousel" data-slide-to="6"></li>
 						<li data-target="#myCarousel" data-slide-to="7"></li>
 						<li data-target="#myCarousel" data-slide-to="8"></li>
+						<li data-target="#myCarousel" data-slide-to="9"></li>
 					</ol>
 
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner">	
-							<div class="item active">
-									<img src="images/slider/EncuentroCitt2018.jpg" alt="evento6" style="width:100%;">
-									<div class="carousel-caption">
-										<h5 class="text-light bg-citt">Ganadores Encuentro Anual CITT 2018 </h5>
-										<br>
-									</div>
-								</div>
+						<div class="item active">
+							<img src="images/slider/Bemvindo.jpg" alt="evento6" style="width:100%;">
+							<div class="carousel-caption">
+								<h5 class="text-light bg-citt">Bienvenidos CITT SB 2019</h5>
+								<br>
+							</div>
+						</div>
 						<div class="item">
-							<img src="images/slider/2.jpg" alt="evento5" style="width:100%;">
+							<img src="images/slider/EncuentroCitt2018.jpg" alt="evento7" style="width:100%;">
+							<div class="carousel-caption">
+								<h5 class="text-light bg-citt">Ganadores Encuentro Anual CITT 2018 </h5>
+								<br>
+							</div>
+						</div>
+						<div class="item">
+							<img src="images/slider/2.jpg" alt="evento8" style="width:100%;">
 							<div class="carousel-caption">
 								<h5 class="text-light bg-citt">DRON DUOC SEDE SAN BERNARDO 2018</h5>
 								<br>
@@ -433,11 +441,11 @@ $_SESSION["numero2"] = $numero2;
 
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/Michael.jpg" alt="cara_m" width="150px" height="150px" />
-								<h3>Michel Catalán</h3>
+								<img class="team-thumb img-circle" src="images/miniaturas/profe-Michael2.jpg" alt="cara_m" width="150px" height="150px" />
+								<h3>Michael Catalán</h3>
 								<p>Profesor & Docente CITT 
 									<br>
-									<span class="text-info"></span>
+									<span class="text-info">m.catalan@profesor.duoc.cl</span>
 								</p>
 							</div>
 						</div>
@@ -492,7 +500,7 @@ $_SESSION["numero2"] = $numero2;
 						</div>
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
-								<img class="team-thumb img-circle" src="images/miniaturas/benjaminMora.jpg" alt="cara_benjaminMora" width="150px" height="150px"
+								<img class="team-thumb img-circle" src="images/miniaturas/benjamin.jpg" alt="cara_benjaminMora" width="150px" height="150px"
 								/>
 								<h3>Benjamín Mora</h3>
 								<p>INGENIERIA EN INFORMÁTICA
@@ -527,10 +535,10 @@ $_SESSION["numero2"] = $numero2;
 						<div class="col-md-3 col-sm-6">
 							<div class="people">
 								<img class="team-thumb img-circle" src="images/miniaturas/mike.jpg" alt="cara_leo" width="150px" height="150px"/>
-								<h3>Mike</h3>
+								<h3>Elias Retamales</h3>
 								<p>ANALISTA PROGRAMADOR
 									<br>
-									<span class="text-info"></span>
+									<span class="text-info">el.retamales@alumnos.duoc.cl</span>
 								</p>
 							</div>
 						</div>
